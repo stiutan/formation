@@ -10,14 +10,14 @@ var bodyParser = require('body-parser');
 var port = 8000 || process.env.PORT;
 
 // secrets
-var secrets = require('./secrets.js');
+// var secrets = require('./secrets.js');
 
 // Required application specific custom router module
 // var routes = require('./src/routes/');
 
 // mongoose connection
 mongoose.Promise = require('bluebird');
-mongoose.connect(process.env.MONGODB_URI || secrets.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => { // if all is ok we will be here
       console.log('Start');
     })
