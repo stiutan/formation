@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 // port
-var port = 8000 || process.env.PORT;
+var port = process.env.PORT || 8000;
 
 // secrets
 // var secrets = require('./secrets.js');
